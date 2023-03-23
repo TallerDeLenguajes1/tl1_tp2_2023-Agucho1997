@@ -1,0 +1,19 @@
+f) Inspeccione desde el explorador de archivos la carpeta donde inicializó el repositorio:
+● ¿Puede ver el archivo tp2_1_2.c? ¿Por qué?
+
+No se puede ver el archivo tp2_1_2.c ya que este esta creado en una rama
+
+
+En la línea principal agregue un nuevo archivo que se llame Respuestas.txt y haga
+el commit correspondiente
+● vuelva a ejecutar el comando gitk --all ¿Qué diferencias nota?
+
+la diferencia que noto es que al haber modificado nuevamente el main
+recien aparece modificar_codigo como una rama
+
+combinamos master con Opcion_2
+● Luego utilice el comando gitk –all para ver los cambios, ¿Qué nota?
+
+ahora al ejecutar el merge vemos que tanto la "version 3 del main (v3)" que contenia
+la inclusion del archivo "Respuestas.txt" como la rama "modificar_codigo" que habiamos
+creado, que contenia el archivo "tp2_1_2.c" se unen y actualizan el main.
