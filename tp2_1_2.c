@@ -5,18 +5,11 @@
 
 int main() {
     int i;
-    double *vt;
-    vt = malloc(sizeof(int) * 20);
-    if (vt == NULL) {
-        printf("Error");
-        exit(-1);
-    }
-
+    double vt[N];
+    double *ptr = &vt[0];
     for (i = 0; i < N; i++) {
-        vt[i] = 1 + rand() % 100;
-    }
-    for (i = 0; i < N; i++) {
-        printf("%i ", *(vt + i));
+        *(ptr + i) = 1 + rand() % 100;
+        printf("%f", *(ptr + i));
     }
 
     return 0;
